@@ -9,26 +9,56 @@
     
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
-        <script src="registerLogin.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class=" loginContainer">
-        <div class="login">
-            <form action="" id="login">
+        <div class="login loginVictim">
+            <div class="crust col-md-3">
+                <label for="choose"><strong> Victim/Volunteer:</strong></label>
+                <select id="choose" class="form-select">
+                  <option value="victim">Victim</option>
+                  <option value="volunteer">Volunteer</option>
+                </select>
+              </div>
+            <form action="register.html"  id="login">
                     <div class="inputs">
                 <div><input class="form-control" type="text" placeholder=" User ID" id="inputtedId"></div>
                     
-               <div><input class="form-control" type="text" placeholder="Password" id="inputtedPassword"
+               <div><input class="form-control" type="password" placeholder="Password" id="inputtedPassword"
                     aria-label="Disabled input example"> </div>
 
-                    <div><button type=" submit" class=" lgnbtn btn btn-success" onclick="login()">Login </button>
+                    <div><button type=" submit" class=" lgnbtn btn btn-success login1">Login </button>
                 <span class="btn btn-success "><a href="register.html">Register</a></span></div>
                     </div>
             </form>
         </div>
+
+        <div class="login loginVolunteer">
+            <div class="choose col-md-3">
+                <label for="choose"><strong> Victim/Volunteer:</strong></label>
+                <select id="choose" class="form-select">
+                  <option value="victim">Victim</option>
+                  <option value="volunteer" id="volunteer">Volunteer</option>
+                </select>
+              </div>
+            <form action="register.html"  id="login">
+                    <div class="inputs">
+                <div><input class="form-control" type="text" placeholder=" User ID" id="inputtedId"></div>
+                    
+               <div><input class="form-control" type="password" placeholder="Password" id="inputtedPassword"
+                    aria-label="Disabled input example"> </div>
+
+                    <div><button type=" submit" class=" lgnbtn btn btn-success login1">Login </button>
+                <span class="btn btn-success "><a href="register.html">Register</a></span></div>
+                    </div>
+            </form>
+        </div> 
     </div>
+    
+    <script src="login.js" ></script>
 </body>
 
 </html>

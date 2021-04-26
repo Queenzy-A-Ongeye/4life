@@ -1,22 +1,24 @@
-function User(id, age, gender, password, ) {
+
+window.onload = (event) => {
+    
+  
+
+function User(id, age, gender, password ) {
     this.id = id;
     this.age = age;
     this.gender = gender;
     this.password = password;
 
-
 }
 
-var id = document.querySelector('#id')
-var age = document.querySelector('#age')
-var gender = document.querySelector('#gender')
-var password = document.querySelector('#password')
-var question = document.querySelector('#question')
-var randomNum = document.querySelector('.randomNum')
+const id = document.querySelector('#id');
+const age1 = document.querySelector('#age');
+const gender = document.querySelector('#gender');
+const password = document.querySelector('#password');
+var question = document.querySelector('#question');
+var randomNum = document.querySelector('.randomNum');
 var regbtn = document.querySelector('#register');
-var lgnbtn = document.querySelector('#login');
-var inputtedId = document.querySelector('#inputtedId')
-var inputtedPassword = document.querySelector('#inputtedPassword')
+
 
 
 regbtn.addEventListener('submit', register);
@@ -36,30 +38,27 @@ function randomNumber(length) {
 
 id.value = randomNumber(5);
 
-var newUser = new User(id.value, age.value, gender.value, password.value);
+// var newUser = new User(id.value, 23, 'male', 1234);
 function register(e){
+var newUser = new User(id.value, age1.value, gender.value, password.value);
     e.preventDefault();
+    console.log(newUser);
     
-   localStorage.setItem('user', JSON.stringify(newUser))
-   var stored = JSON.stringify(newUser)
-  console.log(stored)
-    
+  localStorage.setItem('user', JSON.stringify(newUser))
+
+  form.action = "login.html"
+
 }
 
 
-// lgnbtn.addEventListener('submit', login)
 
-function login(){
-    
-   var id2 =  localStorage.getItem('user', JSON.parse(newUser.id))
-
-   if(id2===inputtedId){
-       alert("login success")
-   }
-   else{
-       alert('check credentials')
-       return
-   }
 }
+// $(document).ready(function(){
 
+//     var inputId = $("#inputtedId").val()
+//     $('.login1').click(function(){
+// alert('ready')
 
+//     })
+
+// })
