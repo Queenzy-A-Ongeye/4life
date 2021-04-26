@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+/* *******************
+***dasbboard victim***
+*********************/
+
+.sidenav {
+  height: 100%;
+  max-width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #C4C4C4;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+.sidenav p{
+  font-weight: 700;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: green;
+}
+
+.main {
+  margin-left: 160px; 
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
