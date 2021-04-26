@@ -40,7 +40,7 @@
 }
 
 .sidenav>.dash-content a:hover {
-  color: green;
+  color: white;
 }
 
 .main {
@@ -49,18 +49,21 @@
   min-height: 500px;
   width: auto;
   position: relative;
-  background: green;
   overflow-x: hidden;
 }
-
+#volunters{
+  background-color: rgb(166, 188, 214);
+  min-height: 90vh;
+  margin: 10px auto;
+  position: relative;
+  padding: 20px;
+}
 #report-case{
   background-color: hotpink;
   margin: 10px auto;
   min-height: 90vh;
   position: relative;
-  background: #f55;
   padding: 20px;
-
 }
 
 #support{
@@ -88,6 +91,55 @@
   position: relative;
 }
 
+input[type="button"]{
+  bottom: 50px;
+  right: 100px;
+  position: fixed;
+  transition: ease-in-out 500ms;
+}
+
+input[type="button"]:hover{
+  bottom: 60px;
+  right: 110px;
+  color: white;
+}
+
+/***start chat***/
+.sidechat {
+  height: 60vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: #111;
+  border-radius: 5px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+}
+
+.sidechat a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidechat a:hover {
+  color: #f1f1f1;
+}
+
+.sidechat .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/***end chat***/
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
