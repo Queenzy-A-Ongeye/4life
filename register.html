@@ -9,30 +9,34 @@
     
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
+     
     <title>Document</title>
 </head>
 
 <body>
     <div class=" loginContainer">
         <div class="register">
-            <form action="">
-                    <div class="inputs">
-                <div><input class="form-control" type="text" placeholder=" User ID" aria-label=" user ID"></div>
-                    
-               <div><input class="form-control" type="text" placeholder="Age"></div>
-               <div><input class="form-control" type="text" placeholder="gender">
+            <!-- <button class="randomNum">Generate ID</button> -->
+            <form action="" id="register">
 
-                    <div><input class="form-control" type="text" placeholder="Security Question"></div>
+                    <div class="inputs">
+                <div><input class="form-control" type="text" placeholder=" User ID"  id="id" aria-label=" user ID" disabled></div>
+                    
+               <div><input class="form-control" type="text" placeholder="Age" id="age"></div>
+               <div><input class="form-control" type="text" placeholder="gender" id="gender">
+
+                    <div><input class="form-control" type="text" placeholder="Security Question" id="question"></div>
                     
                    
                          
-                         <div><input class="form-control" type="text" placeholder="Password"></div>
-                <div class="btn btn-success">Register</div>
-                <div class="btn btn-success "><a href="login.html">Login</a></div>
+                         <div><input class="form-control" type="password" id="password" placeholder="Password"></div>
+                <div><button type=" submit" class=" regbtn btn btn-success">Register </button><span
+                 class="btn btn-success lgn"><a href="login.html">Login</a><span></span></div>
                     </div>
             </form>
         </div>
     </div>
+    <script src="registerLogin.js"></script>
 </body>
 
 </html>
