@@ -1,26 +1,56 @@
-body{
+body {
     font-family: 'Ubuntu', sans-serif;
+
 }
-.life{
-    height: 100%;
-    width: 160px;
+
+.life {
+    background-color: #c4c4c4;
     position: fixed;
-    z-index: 1;
+    width: 250px;
+    height: 100%;
     top: 0;
     left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 50px;
+    z-index: 1;
+    text-align: center;
 
 }
-.life a{
+
+
+.life a {
     padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
 }
-.life a:hover{
+
+.life a:hover {
     color: #f1f1f1;
 
+}
+
+.victim {
+    margin-left: 250px;
+    padding: 5px;
+    min-height: 500px;
+    width: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.info {
+    width: 1440px;
+    height: 300px;
+    position: relative;
+    background:white;
+}
+.life>.user{
+   text-align:left;
+   padding:10px; 
+
+}
+.life img{
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 20px;
 }
