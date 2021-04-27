@@ -11,34 +11,71 @@
     <link rel="script" href="volunter.js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-   <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="life">
-            <img src="assets/usericon.png" class="img-fluid">
             <div class="user">
                 <a href="#user">User Details</a>
-                <a href="victim.html">Victims</a>
-                <a href="common.html">Common Room</a>
-                <a href="feedback.html">Feedback</a>
+                <a href="#victim">Victims</a>
+                <a href="#common">Common Room</a>
+                <a href="#feedback">Feedback</a>
 
             </div>
+
         </div>
         <div class="victim">
-            
-                </div>
+            <!--victim side -->
+            <div class="container">
+                <h1>User Detail</h1>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+                <label for="idnumb">Id Number:</label><br>
+                <input type="text" id="idnumb" name="idnumb">
+                <label for="profession">Profestionist:</label><br>
+                <input type="text" id="pname" name="lname">
+                <label for="Specialisation">Specialisation:</label><br>
+                <input type="text" id="sname" name="lname">
 
             </div>
-            
-
+            <div class="feedback" id="feedback">
+                <h1>Feedback Form</h1>
+            </div>
+            <div class="container">
+        
+                <form action>
+                    <label for="fname">ID Number</label>
+                    <input type="text" id="idnumb" name="firstname" placeholder="Your name..">
+        
+                    <label for="career">Profestionist</label>
+                    <input type="text" id="career" name="career" placeholder="Your career pls..">
+        
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Kenya</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+        
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
 
     </div>
+
+
+
+
+
 </body>
 
 </html>

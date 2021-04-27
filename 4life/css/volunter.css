@@ -31,12 +31,15 @@ body {
 }
 
 .victim {
+    background-image: url(/assets/_It\ takes\ courage\ to\ hope_\ Dare\ to\ hope\ that\ life\ can\ be\ beautiful\ and\ that\ it\ is\ beautiful\ every\ day._\ -\ from\ _Hope_\ in\ the\ Gardens\ of\ the\ Heart\ series\ by\ Summit\ University\ Press);
     margin-left: 250px;
     padding: 5px;
     min-height: 500px;
-    width: auto;
+    width:65%;
     position: relative;
     overflow-x: hidden;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .info {
