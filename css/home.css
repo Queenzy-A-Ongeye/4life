@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /* nav-bar */
 ul,
 li,
@@ -12,7 +14,9 @@ nav .navbar {
 #sub {
   border: 2px 2px solid green;
   color: white;
+  padding-right: 5px;
 }
+
 
 /* logo */
 .conc {
@@ -54,10 +58,11 @@ nav .navbar {
   text-align: center;
 }
 .pap {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.789);
   border-radius: 10%;
   font-size: 25px;
   text-align: center;
+ 
 }
 
 /* what we do */
@@ -65,13 +70,22 @@ nav .navbar {
   text-align: center;
   padding-top: 40px;
 }
-#REPORT,
-#EMERGENCY,
-#EDUCATE{
+#report,
+#dev,
+#educate{
   display: none;
   /* font-family: Helvetica,Arial,sans-serif; */
   font-size: 16px;
 }
 .gif{
 color: crimson;
+font-size: 20px;
+}
+.title{
+    font-family: 'Original Surfer', cursive;
+    font-size: 25px;
+}
+#title{
+    font-family: 'Pacifico', cursive;
+    font-size: large;
 }
