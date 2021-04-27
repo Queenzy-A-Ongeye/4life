@@ -31,11 +31,41 @@ $(document).ready(function(){
          return true
         }
     
-        $('.loginVolunteer').hide()
-            var volunteer = $("#choose  option:selected").val()
-        if(volunteer==='volunteer'){
-            // $('.loginVictim').slideUp();
-            alert('volunteer')
-                        
-        }
+                     
+     
+})
+
+$(document).ready(function(){
+
+    $('.loginVolunteer').hide()
+
+// var option = $("#choose").val('volunteer')
+
+// if (option=='volunteer'){
+// alert('ready')
+// }
+    
+$('#choose').change(function(){
+    $('.loginVolunteer').show()
+
+    $('.loginVictim').slideUp('slow')
+    
+})
+
+$('.volunteerbtn').click(function(e){
+    e.preventDefault();
+
+        const volunteerId = document.querySelector('#volunteerId').value
+    const volunteerPassword = document.querySelector('#volunteerPassword').value
+
+        var givenId='life'
+        var givenPassword=givenId;
+    if(volunteerId===""|| volunteerPassword===""){
+        alert('please fill all the fields')
+        return false;
+    }
+    else if(givenId===volunteerId&&givenPassword===volunteerPassword){
+        alert('volunteer login successful')
+    }
+})
 })
