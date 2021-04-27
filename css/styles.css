@@ -11,6 +11,7 @@ nav .navbar {
 }
 #sub {
   border: 2px 2px solid green;
+  color: white;
 }
 
 /* logo */
@@ -47,13 +48,30 @@ nav .navbar {
 }
 
 /* about */
-.dab{
-    font-family: 'Abril Fatface', cursive;
-    font-size: 55px;
-    text-align: center;
-}.pap{
-    background-color: gray;
-    border-radius: 10%;
-    font-size: 25px;
-    text-align: center;
+.dab {
+  font-family: "Abril Fatface", cursive;
+  font-size: 55px;
+  text-align: center;
+}
+.pap {
+  background-color: gray;
+  border-radius: 10%;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* what we do */
+.what-we-do {
+  text-align: center;
+  padding-top: 40px;
+}
+#REPORT,
+#EMERGENCY,
+#EDUCATE{
+  display: none;
+  /* font-family: Helvetica,Arial,sans-serif; */
+  font-size: 16px;
+}
+.gif{
+color: crimson;
 }
