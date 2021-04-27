@@ -1,3 +1,49 @@
+<<<<<<< HEAD
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginContainer{
+    background-color: white;
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.login, .register{
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:grey;
+    border-radius: 20px;
+    margin: 10% auto;
+}
+.inputs div{
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly; */
+
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+color: white;
+}
+.lgn{
+    margin-left: 10px;
+}
+=======
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 *{
@@ -249,3 +295,4 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+>>>>>>> beb2ea6da6fc776a6a4582b853728a22eff61825
