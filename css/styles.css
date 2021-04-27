@@ -333,8 +333,7 @@
 
 /***** common section *****/
 #common-room{
-  background-color:lightcoral;
-  min-height: 90vh;
+  min-height: 60vh;
   margin: 10px auto;
   position: relative;
 }
@@ -342,6 +341,22 @@
 
 #common-room>.row>.right{
   text-align: center;
+}
+
+.left>.cmmn{
+  text-align: left;
+  padding: 5px 30px;
+}
+
+.left>.cmmn ol{
+  list-style: lower-roman;
+}
+
+.left>.cmmn span{
+  background-color: #808080;
+  color: white;
+  border-radius: 2px;
+  padding: 2px 6px;
 }
 
 /***** feedback section *****/
@@ -353,6 +368,7 @@
   position: relative;
 }
 
+/***start chat***/
 #chat{
   bottom: 50px;
   right: 100px;
@@ -366,7 +382,6 @@
   color: white;
 }
 
-/***start chat***/
 .sidechat {
   height: 60vh;
   width: 0;
