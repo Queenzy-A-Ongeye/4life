@@ -20,8 +20,7 @@
       <img src="./assets/usericon.png" alt="anonymous user" class="img-fluid">
       <p class="text-md-center">123456789</p>
       <div class="dash-content">
-        <a href="#report-case">Volunters</a>
-        <a href="#report-case">Report Case</a>
+        <a href="#volunters">Volunters</a>
         <a href="#support">Support</a>
         <a href="#book-session">Book Session</a>
         <a href="#common-room">Common Room</a>
@@ -31,55 +30,138 @@
     </div>
 
     <div class="main">
-      <!-- reportcase section -->
+      <!-- Volunter section -->
       <div class="container-fluid" id="volunters">
         <h2 class="text-center">Volunters</h2>
-        <h3>Online </h3>
-      </div>
-      <!-- reportcase section -->
-      <div class="container-fluid" id="report-case">
-        <h2 class="text-center">Report Case</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sit delectus laboriosam quos sequi expedita amet earum, repudiandae, ducimus cumque, repellat eos adipisci eligendi. Ratione facilis iste ipsa voluptas itaque!</p>
+        <div class="row">
+          <div class="col-md-6" id="online">
+            <h3 class="text-md-center">Online </h3>
+            <div class="onVol">
+              <ol>
+
+              </ol>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-md-center">Offline </h3>
+            <div class="onVol">
+              <ol>
+
+              </ol>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- supoort section -->
       <div class="container-fluid" id="support">
-        <h2>Support</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sit delectus laboriosam quos sequi expedita amet earum, repudiandae, ducimus cumque, repellat eos adipisci eligendi. Ratione facilis iste ipsa voluptas itaque!</p>
+        <h2 class="text-center">Support</h2>
+        
       </div>
 
       <!-- book-session section -->
-      <div class="container-fluid" id="book-session">
-        <h2>Support</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sit delectus laboriosam quos sequi expedita
-          amet earum, repudiandae, ducimus cumque, repellat eos adipisci eligendi. Ratione facilis iste ipsa voluptas
-          itaque!</p>
+      <div class="container-fluid light" id="book-session">
+        <h2 class="text-center">Book Session</h2>
+        <div class="container d-md-flex flex-column justify-content-center align-items-center">
+            <div class="calendar">
+              <div class="calendar-header">
+                  <span class="month-picker" id="month-picker">April</span>
+                  <div class="year-picker">
+                      <span class="year-change" id="prev-year">
+                          <pre><</pre>
+                      </span>
+                      <span id="year">2021</span>
+                      <span class="year-change" id="next-year">
+                          <pre>></pre>
+                      </span>
+                  </div>
+              </div>
+              <div class="calendar-body">
+                  <div class="calendar-week-day">
+                      <div>Sun</div>
+                      <div>Mon</div>
+                      <div>Tue</div>
+                      <div>Wed</div>
+                      <div>Thu</div>
+                      <div>Fri</div>
+                      <div>Sat</div>
+                  </div>
+                  <div class="calendar-days"></div>
+              </div>
+              <div class="month-list"></div>
+          </div>
+          <div class="time">
+            <label for="appt">Set time for your meeting:</label>
+            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required><br>
+            <small>Open hours are 8am to 6pm</small>
+          </div>
+          <div class="howsession">
+            <label class="radio-inline" id="session">
+              <input type="radio" name="tlk" value="chat"> Chat
+            </label>
+            <label class="radio-inline" id="session">
+              <input type="radio" name="tlk" value="Voice"> Voice
+            </label>
+            <br>
+            <input type="button" class="btn btn-secondary btn-lg" value="Book Session" id="confr" aria-pressed="true">
+          </div>
+
+        </div>
       </div>
 
       <!-- common-room section -->
       <div class="container-fluid" id="common-room">
-        <h2>Support</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sit delectus laboriosam quos sequi expedita
-          amet earum, repudiandae, ducimus cumque, repellat eos adipisci eligendi. Ratione facilis iste ipsa voluptas
-          itaque!</p>
+        <h2 class="text-center">Common Room</h2>
+        <div class="row ">
+          <div class="col-md-6 left">
+            <h3>Up Coming Events</h3>
+            <span>Talk Time</span>
+            <ul>
+              <li>4life Spiritual Talk</li>
+              <li>Life lightning Talk</li>
+            </ul>
+            <p>Choose a Meeting</p>
+          </div>
+          <div class="col-md-6 right d-flex flex-column align-items-center jusitify-content-center">
+            <h4>Meeting ID</h4>
+            <span>2324234322</span>
+            <label for="Audio">
+              <input type="checkbox" name="" id="">
+              Connect to Audio
+            </label>
+            <br>
+            <input type="button" value="Join Room" class="btn btn-secondary">
+          </div>
+        </div>
       </div>
 
       <!-- feedback section -->
       <div class="container-fluid" id="feedback">
-        <h2>Support</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sit delectus laboriosam quos sequi expedita
-          amet earum, repudiandae, ducimus cumque, repellat eos adipisci eligendi. Ratione facilis iste ipsa voluptas
-          itaque!</p>
+        <h2 class="text-center">Feedback</h2>
+        <p>Would you recommend a friend?</p>
+        <p>How are the services?</p>
+        <p>Would you Recommend One to Out Website?</p>
+        <p>What should we improve on</p>
+        <p>Comments textarea</p>
       </div>
 
       <!-- chat section -->
       <div id="mySideChat" class="sidechat">
         <a href="javascript:void(0)" class="closebtn" id="closeChat">&times;</a>
+
         <div class="container">
-          <input type="text" class="form-control" name="" id="" placeholder="Write a Message">
+          <div class="messageBox">
+            <ul>
+              <p class="bg-success">Hey</p>
+              <p class="bg-primary float-md-left">Hello Too</p>
+            </ul>
+          </div>
+          <div class="input-container">
+            <input type="text" class="form-control" placeholder="Write a Message">
+            <i class="fad fa-paper-plane icon"></i>
+          </div>        
         </div>
       </div>
-
 
       <input type="button" id="chat" value="Start Chat Session" class="btn btn-light btn-outline-success btn-lg">
     </div>

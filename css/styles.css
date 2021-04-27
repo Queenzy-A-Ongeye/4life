@@ -2,6 +2,9 @@
 
 *{
   font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* *******************
@@ -51,54 +54,313 @@
   position: relative;
   overflow-x: hidden;
 }
-#volunters{
-  background-color: rgb(166, 188, 214);
-  min-height: 90vh;
-  margin: 10px auto;
-  position: relative;
-  padding: 20px;
+#online{
+  border-right: 2px solid black;
+  
 }
-#report-case{
-  background-color: hotpink;
-  margin: 10px auto;
+
+/***** volunter section *****/
+
+#volunters{
   min-height: 90vh;
+  margin: 10px auto;
   position: relative;
   padding: 20px;
 }
 
+
+/***** support section *****/
 #support{
   background-color: indigo;
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
 }
+
+/***** book section *****/
 #book-session{
-  background-color: lightblue;
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
 }
+
+#book-session h2{
+  padding: 15px;
+}
+.calendar {
+  height: max-content;
+  width: max-content;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.light .calendar {
+  box-shadow: 0  5px 5px black;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  padding: 5px;
+}
+
+.calendar-body {
+  padding: 5px;
+}
+
+.calendar-week-day {
+  height: 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+}
+
+.calendar-week-day div {
+  display: grid;
+  place-items: center;
+  color: #000000;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  color: #000000;
+}
+
+.calendar-days div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  animation: to-top 1s forwards;
+  /* border-radius: 50%; */
+}
+
+.calendar-days div span {
+  position: absolute;
+}
+
+.calendar-days div:hover span {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+  width: 2px;
+  height: 0;
+  background-color: #008000;
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+  height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+  bottom: 0;
+  left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+  width: 0;
+  height: 2px;
+  background-color: #008000;
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+  width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+  top: 0;
+  left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.calendar-days div:hover span:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.calendar-days div:hover span:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.calendar-days div:hover span:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+  background-color: #008000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.calendar-days div.curr-date span {
+  display: none;
+}
+
+.month-picker {
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.month-picker:hover {
+  background-color: #808080;
+  color: #fff;
+}
+
+.year-picker {
+  display: flex;
+  align-items: center;
+}
+
+.year-change {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.year-change:hover {
+  background-color: #808080;
+  color: #fff;
+}
+
+
+.month-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  padding: 20px;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  display: grid;
+  transform: scale(1.5);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.month-list.show {
+  transform: scale(1);
+  visibility: visible;
+  pointer-events: visible;
+  transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+  display: grid;
+  place-items: center;
+}
+
+.month-list > div > div {
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: inherit;
+}
+
+.month-list > div > div:hover {
+  background-color: #808080;
+  color: #fff;
+}
+
+@keyframes to-top {
+  0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/****** time *******/
+.time{
+  padding: 10px;
+  text-align: center;
+}
+.time label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+#appt, label {
+  margin: .4rem 0;
+}
+
+#session{
+  padding: 10px;
+}
+.howsession{
+  margin-bottom: 10px;
+}
+
+
+
+/***** common section *****/
 #common-room{
   background-color:lightcoral;
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
 }
+
+
+#common-room>.row>.right{
+  text-align: center;
+}
+
+/***** feedback section *****/
+
 #feedback{
-  background-color: midnightblue;
+  background-color: pink;
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
 }
 
-input[type="button"]{
+#chat{
   bottom: 50px;
   right: 100px;
   position: fixed;
   transition: ease-in-out 500ms;
 }
 
-input[type="button"]:hover{
+#chat:hover{
   bottom: 60px;
   right: 110px;
   color: white;
@@ -112,18 +374,21 @@ input[type="button"]:hover{
   z-index: 1;
   bottom: 0;
   right: 0;
-  background-color: #111;
+  background-color: grey;
   border-radius: 5px;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 70px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  overflow-y: hidden;
 }
 
 .sidechat a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: rgb(0, 0, 0);
   display: block;
   transition: 0.3s;
 }
@@ -138,6 +403,34 @@ input[type="button"]:hover{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.messageBox{
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+  height: 35vh;
+}
+
+.icon {
+  padding: 10px;
+  color: #000000;
+  min-width: 50px;
+  text-align: left;
+  font-size: 30px;
+}
+
+
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-field:focus {
+  border: 2px solid #000000;
 }
 /***end chat***/
 
