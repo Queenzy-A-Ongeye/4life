@@ -362,12 +362,22 @@
 /***** feedback section *****/
 
 #feedback{
-  background-color: pink;
-  min-height: 90vh;
+  min-height: 75vh;
   margin: 10px auto;
   position: relative;
 }
-
+#feedback>.container{
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  
+}
+#feedback>.container>.fdbck{
+  width: 450px;
+  min-height: 50vh;
+}
 /***start chat***/
 #chat{
   bottom: 50px;
