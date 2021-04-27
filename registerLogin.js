@@ -41,13 +41,13 @@ id.value = randomNumber(5);
 // var newUser = new User(id.value, 23, 'male', 1234);
 function register(e){
 var newUser = new User(id.value, age1.value, gender.value, password.value);
-    e.preventDefault();
+    
     console.log(newUser);
     
   localStorage.setItem('user', JSON.stringify(newUser))
 
-  form.action = "login.html"
-
+  
+//   e.preventDefault();
 }
 
 
