@@ -11,7 +11,10 @@
     <link rel="script" href="volunter.js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous" ></script>
 </head>
 
 <body>
@@ -25,38 +28,53 @@
                 <a href="feedback.html">Feedback</a>
 
             </div>
-            <div class="victim">
-                <div class="form">
-                    <form>
-                        <div class="img container">
-                            <img src="assets/107.10-id-card-icon-iconbunny.jpg">
+        </div>
+        <div class="victim">
+            <h1>Log In</h1>
+            <p>You have to log in your details!</p>
+            <div class="form" id="user">
 
+
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+
+
+                    <form class="asset" action="/action_page.php">
+                        <div class="imgcontainer">
+                            <img src="assets/107.10-id-card-icon-iconbunny.jpg"  class="avatar">
                         </div>
+
                         <div class="container">
-                            <label for="uname"><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="uname"><b>UserID</b></label>
+                            <input type="text" placeholder="Enter Userid" name="uname" required>
 
                             <label for="psw"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
 
-                            <button type="submit">Login</button>
+                            <button type="button">Login</button>
                             <label>
                                 <input type="checkbox" checked="checked" name="remember"> Remember me
                             </label>
-
                         </div>
+
                         <div class="container" style="background-color:#f1f1f1">
-                            <button type="button" class="cancelbtn">Cancel</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button>
                             <span class="psw">Forgot <a href="#">password?</a></span>
-                          </div>
-
+                        </div>
                     </form>
-
                 </div>
-                <div class="info"></div>
 
             </div>
+            
+
         </div>
+
+    </div>
 </body>
 
 </html>
