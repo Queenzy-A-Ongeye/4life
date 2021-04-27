@@ -16,6 +16,7 @@
 
 <body>
   <div class="container-fluid">
+
     <div class="sidenav">
       <img src="./assets/usericon.png" alt="anonymous user" class="img-fluid">
       <p class="text-md-center">123456789</p>
@@ -53,7 +54,7 @@
         </div>
       </div>
       <hr>
-      <!-- supoort section -->
+      <!-- support section -->
       <div class="container-fluid" id="support">
         <h2 class="text-center">Support</h2>
         
@@ -63,33 +64,12 @@
       <div class="container-fluid light" id="book-session">
         <h2 class="text-center">Book Session</h2>
         <div class="container d-md-flex flex-column justify-content-center align-items-center">
-            <div class="calendar">
-              <div class="calendar-header">
-                  <span class="month-picker" id="month-picker">April</span>
-                  <div class="year-picker">
-                      <span class="year-change" id="prev-year">
-                          <pre><</pre>
-                      </span>
-                      <span id="year">2021</span>
-                      <span class="year-change" id="next-year">
-                          <pre>></pre>
-                      </span>
-                  </div>
-              </div>
-              <div class="calendar-body">
-                  <div class="calendar-week-day">
-                      <div>Sun</div>
-                      <div>Mon</div>
-                      <div>Tue</div>
-                      <div>Wed</div>
-                      <div>Thu</div>
-                      <div>Fri</div>
-                      <div>Sat</div>
-                  </div>
-                  <div class="calendar-days"></div>
-              </div>
-              <div class="month-list"></div>
+
+          <div class="form-group">
+            <label for="born">Choose Convient day</label>
+            <input id="born" class="form-control" type="date">
           </div>
+
           <div class="time">
             <label for="appt">Set time for your meeting:</label>
             <input type="time" id="appt" name="appt" min="09:00" max="18:00" required><br>
@@ -186,7 +166,7 @@
         </div>
       </div>
 
-      <input type="button" id="chat" value="Start Chat Session" class="btn btn-light btn-outline-success btn-lg">
+      <input type="button" id="chat" value="Start Chat Session" class="btn btn-success btn-lg">
     </div>
   </div>
   </div>
