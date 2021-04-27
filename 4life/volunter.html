@@ -27,44 +27,66 @@
             </div>
 
         </div>
-        <div class="victim">
+        <div class="victim" >
             <!--victim side -->
-            <div class="container">
+            <div class="container" id="userdetail">
                 <h1>User Detail</h1>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname">
-                <label for="idnumb">Id Number:</label><br>
-                <input type="text" id="idnumb" name="idnumb">
-                <label for="profession">Profestionist:</label><br>
-                <input type="text" id="pname" name="lname">
-                <label for="Specialisation">Specialisation:</label><br>
-                <input type="text" id="sname" name="lname">
+                <div id="detail">
 
+                    <p>Full Name: <span id="fname"></span></p>
+                    <p>Email: <span id="mail"></span></p>
+                    <p>Profestionist: <span id="tele"></span></p>
+                    <p>Specialisation: <span id="stree"></span></p>
+
+                </div>
+            </div>
+
+            <div class="container" id="storo" >
+                <div class="victim" id="victim">
+                    <h1>Victim Stories</h1>
+                    <table style="width:100%">
+                        <tr>
+                            <th>ID No</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Case</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="feedback" id="feedback">
                 <h1>Feedback Form</h1>
             </div>
             <div class="container">
-        
+
                 <form action>
                     <label for="fname">ID Number</label>
                     <input type="text" id="idnumb" name="firstname" placeholder="Your name..">
-        
+
                     <label for="career">Profestionist</label>
                     <input type="text" id="career" name="career" placeholder="Your career pls..">
-        
+
                     <label for="country">Country</label>
                     <select id="country" name="country">
                         <option value="australia">Kenya</option>
                         <option value="canada">Canada</option>
                         <option value="usa">USA</option>
                     </select>
-        
+
                     <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
                     <input type="submit" value="Submit">
                 </form>
             </div>

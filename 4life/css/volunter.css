@@ -31,23 +31,19 @@ body {
 }
 
 .victim {
-    background-image: url(/assets/_It\ takes\ courage\ to\ hope_\ Dare\ to\ hope\ that\ life\ can\ be\ beautiful\ and\ that\ it\ is\ beautiful\ every\ day._\ -\ from\ _Hope_\ in\ the\ Gardens\ of\ the\ Heart\ series\ by\ Summit\ University\ Press);
+     /* background-image: url(/assets/_It\ takes\ courage\ to\ hope_\ Dare\ to\ hope\ that\ life\ can\ be\ beautiful\ and\ that\ it\ is\ beautiful\ every\ day._\ -\ from\ _Hope_\ in\ the\ Gardens\ of\ the\ Heart\ series\ by\ Summit\ University\ Press); */
     margin-left: 250px;
     padding: 5px;
     min-height: 500px;
-    width:65%;
+    width:auto;
     position: relative;
     overflow-x: hidden;
     text-align: center;
     margin-top: 20px;
+
 }
 
-.info {
-    width: 1440px;
-    height: 300px;
-    position: relative;
-    background: white;
-}
+
 
 .life>.user {
     text-align: left;
@@ -59,53 +55,6 @@ body {
     max-width: 200px;
     max-height: 200px;
     margin-top: 20px;
-}
-
-
-form {
-    border: 3px solid #f1f1f1;
-
-  }
-  
-  
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-
-  img.avatar {
-    width: 25%;
-    border-radius: 50%;
-  }
-  
-  
-  .container {
-    padding: 16px;
-    width: 45%;
-  }
-  
-
-  span.psw {
-    float: right;
-    padding-top: 16px;
 }
   
 input[type=text], select, textarea {
@@ -141,4 +90,23 @@ input[type=text], select, textarea {
   }
   .feedback{
       text-align: center;
+  }
+  .common{
+      background-color: white;
+      padding: 20px;
+      
+  }
+  #userdetail{
+    min-height: 30vh;
+    margin: 10px auto;
+    position: relative;
+    padding: 20px;
+    background-color: gold;
+  }
+  #storo{
+    min-height:50vh;
+    margin: 20px auto;
+    position: relative;
+    padding:20px ;
+    background-color: gray;
   }
