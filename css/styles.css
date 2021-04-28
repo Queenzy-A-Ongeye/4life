@@ -517,6 +517,13 @@ color: white;
   top:10px ;
   right: 10px;
 }
+.register{
+  position: relative;
+}
+.register .home{
+  position: absolute;
+  left:10px
+}
 /***end chat***/
 
 @media screen and (max-height: 450px) {
