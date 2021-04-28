@@ -12,9 +12,12 @@ nav .navbar {
   width: 95%;
 }
 #sub {
-  border: 2px 2px solid green;
-  color: white;
+  border: 2px 2px solid green;;
   padding-right: 5px;
+}
+#sub a{
+  color: white;
+  text-decoration: none;
 }
 
 
@@ -58,11 +61,16 @@ nav .navbar {
   text-align: center;
 }
 .pap {
-  background-color: rgba(128, 128, 128, 0.789);
-  border-radius: 10%;
-  font-size: 25px;
+  background-color: rgba(255, 222, 173, 0.974);
   text-align: center;
- 
+  padding-top: 5%;
+  height: 300px;
+  max-width: 1200px;
+  padding-left: 8%;
+  margin: auto;
+ font-size: 20px;
+ border-radius: 25px;
+ font-family: 'Gabriela', serif;
 }
 
 /* what we do */
@@ -88,4 +96,141 @@ font-size: 20px;
 #title{
     font-family: 'Pacifico', cursive;
     font-size: large;
+}
+p{
+  font-family: 'Gabriela', serif;
+}
+
+/* donate */
+.don{
+  background: url("../assets/donate.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  width: 100%;
+}
+.pond{
+  background: rgba(0, 0, 0, 0.734);
+  height: 900px;
+  text-align: center;
+  color: white;
+  padding-top: 29%;
+  font-family: 'Pacifico', cursive;
+}
+/* Blur-zoom Container */
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(2px);
+  transform: scale(1.2);
+}
+
+/* The Transformation */
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+.row{
+  margin: auto;
+  padding-top: 2.5em;
+}
+.col-md-4 img {
+  padding: 5%;
+  display: inline;
+}
+
+/* footer */
+
+footer {
+	margin-top: -6px;
+	background-color: grey;
+	padding: 50px 0px;
+}
+
+footer #copyright {
+  color: #000;
+  font-size: 20px;
+}
+
+footer .location h4 {
+	margin-top: 0px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+}
+
+footer .location ul li {
+	font-size: 15px;
+	color: #000;
+	display: inline;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+footer .location ul li:first-child {
+	margin-right: 15px;
+	padding-right: 15px;
+	border-right: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+footer .contact-info h4 {
+	margin-top: 0px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+}
+
+footer .contact-info ul li {
+	font-size: 13px;
+	color:#000;
+	display: inline-block;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: 300;
+	margin-bottom: -15px;
+}
+
+footer .contact-info ul li em {
+	font-style: normal;
+	font-weight: 500;
+}
+
+footer .connect-us h4 {
+	margin-top: 0px;
+	font-size: 17px;
+	font-weight: 500;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 35px;
+}
+
+footer .connect-us ul li {
+	display: inline-block;
+	margin-right: 2px;
+}
+
+footer .connect-us ul li a {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	background-color: #fff;
+	color: #373a3c;
+	font-size: 15px;
+  transition: all 0.3s;
+  padding: 0px 0 20px;
+}
+footer .connect-us ul li a:hover {
+	background-color: #f7c552;
 }
