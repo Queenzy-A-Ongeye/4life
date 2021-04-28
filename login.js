@@ -41,14 +41,14 @@ $(document).ready(function(){
 
 $('.volunteerdash').click(function(){
     $('.loginVolunteer').show()
-    $('.loginVictim').hide().slideUp('slow');
+    $('.loginVictim').slideUp('slow');
 
     
 })
 $('.victimdash').click(function(){
     // $('.loginVolunteer').slideUp('slow')
-    $('.loginVictim').show()
-    $('.loginVolunteer').hide().slideUp('slow');
+    $('.loginVictim').fadeIn('slow')
+    $('.loginVolunteer').hide();
 })
 
 
