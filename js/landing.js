@@ -27,4 +27,4 @@ $(document).ready(function(){
         $("#educate").toggle("slow").hide(1000)
         $("#edu-img").fadeIn("slow")
     })
-})
+});
