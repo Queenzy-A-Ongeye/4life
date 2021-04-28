@@ -58,7 +58,7 @@ body {
 }
   
 input[type=text], select, textarea {
-    width: 100%; 
+    width: 60%; 
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
@@ -108,5 +108,13 @@ input[type=text], select, textarea {
     margin: 20px auto;
     position: relative;
     padding:20px ;
-    background-color: gray;
+    /* background-color: gray; */
+    text-align: center;
+  }
+  #feedback{
+    min-height:50vh;
+    margin: 20px auto;
+    position: relative;
+    padding: 20px ;
+    background-color: #f1f1f1;
   }
