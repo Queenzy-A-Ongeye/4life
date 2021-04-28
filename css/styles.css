@@ -43,7 +43,7 @@ color: white;
 .lgn{
     margin-left: 10px;
 }
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 *{
@@ -502,6 +502,20 @@ color: white;
 
 .input-field:focus {
   border: 2px solid #000000;
+}
+
+.loginContainer .home{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.loginVictim, .loginVolunteer{
+  position: relative;
+}
+.volunteerdash, .victimdash{
+  position: absolute;
+  top:10px ;
+  right: 10px;
 }
 /***end chat***/
 
