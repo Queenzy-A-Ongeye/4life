@@ -31,20 +31,20 @@ body {
 }
 
 .victim {
+     /* background-image: url(/assets/_It\ takes\ courage\ to\ hope_\ Dare\ to\ hope\ that\ life\ can\ be\ beautiful\ and\ that\ it\ is\ beautiful\ every\ day._\ -\ from\ _Hope_\ in\ the\ Gardens\ of\ the\ Heart\ series\ by\ Summit\ University\ Press); */
     margin-left: 250px;
     padding: 5px;
     min-height: 500px;
-    width: auto;
+    width:auto;
     position: relative;
     overflow-x: hidden;
+    text-align: center;
+    margin-top: 20px;
+
+
 }
 
-.info {
-    width: 1440px;
-    height: 300px;
-    position: relative;
-    background: white;
-}
+
 
 .life>.user {
     text-align: left;
@@ -57,56 +57,9 @@ body {
     max-height: 200px;
     margin-top: 20px;
 }
-
-
-form {
-    border: 3px solid #f1f1f1;
-
-  }
-  
-  
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-
-  img.avatar {
-    width: 25%;
-    border-radius: 50%;
-  }
-  
-  
-  .container {
-    padding: 16px;
-    width: 45%;
-  }
-  
-
-  span.psw {
-    float: right;
-    padding-top: 16px;
-}
   
 input[type=text], select, textarea {
-    width: 100%; 
+    width: 60%; 
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
@@ -139,3 +92,102 @@ input[type=text], select, textarea {
   .feedback{
       text-align: center;
   }
+  .common{
+      background-color: white;
+      padding: 20px;
+      
+  }
+  #userdetail{
+    min-height: 30vh;
+    margin: 10px auto;
+    position: relative;
+    padding: 20px;
+    text-align: left;
+  }
+  #storo{
+    min-height:50vh;
+    margin: 20px auto;
+    position: relative;
+    padding:20px ;
+    /* background-color: gray; */
+    text-align: center;
+  }
+  #feedback{
+    min-height:50vh;
+    margin: 20px auto;
+    position: relative;
+    padding: 20px ;
+    background-color: #f1f1f1;
+  }
+  #chat{
+    bottom: 50px;
+    right: 100px;
+    position: fixed;
+    transition: ease-in-out 500ms;
+  }
+  #chat:hover{
+    bottom: 60px;
+    right: 110px;
+  }
+  .sidechat {
+    height: 60vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: grey;
+    border-radius: 5px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    overflow-y: hidden;
+  }
+  .sidechat a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+  }
+  .sidechat a:hover {
+    color: #F1F1F1;
+  }
+  .sidechat .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .messageBox{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #E9ECEF;
+    border-radius: .3rem;
+    height: 35vh;
+  }
+  .icon {
+    padding: 10px;
+    color: #000000;
+    min-width: 50px;
+    text-align: left;
+    font-size: 30px;
+  }
+  .input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .input-field:focus {
+    border: 2px solid #000000;
+  }
+  .meeting{
+    text-align: left;
+    padding: 20px;
+  }
+  
