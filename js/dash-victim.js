@@ -25,12 +25,13 @@ window.onload = function(){
     $("#confr").on('click', function(){
       def += 1
       saveObjects('default', def)
-      console.log('saved')
     })
   }
 }
 
 // user logic
+
+
 $(document).ready(function(){
   $("#chat").click(function(){
       document.getElementById("mySideChat").style.width = "450px";
@@ -47,12 +48,31 @@ $(document).ready(function(){
 
     if (bookcal && bTime && hSession){
       let newbooking = new Booking(bookcal, bTime, hSession);
-      saveObjects('user'+def, newbooking);
+      saveObjects('b-book'+def, newbooking);
     }
 
     for (let i = 1; i<localStorage.length; i++){
-      let bookinfo = getobjects('user'+i)
-      $("ul#lstBkDply").append("<li class ='moreDetails'>" + bookinfo.date +"--"+bookinfo.time+'--'+ bookinfo.view + "</li>");
+      let tosplit = localStorage.key(i).split('-');
+
+      if (tosplit[0] == 'b'){
+        let one = localStorage.key(i)
+        let bookinfo = getobjects(one)
+        $("ul#lstBkDply").append("<li class ='moreDetails'>" + bookinfo.date +" -- "+bookinfo.time+' -- '+ bookinfo.view + "</li>");
+      }
     }
   });
 });
+
+$(window).on('load', function(){
+  for (let i = 1; i<localStorage.length; i++){
+    let tosplit = localStorage.key(i).split('-');
+
+    if (tosplit[0] == 'victim'){
+      let one = localStorage.key(i)
+      let info = getobjects(one)
+      
+      $("ol#online").append("<li class ='moreDetails'>" + info.id + "</li>");
+
+    }
+  }
+})
