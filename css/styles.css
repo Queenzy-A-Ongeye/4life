@@ -1,49 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
-*{
-  font-family: 'Ubuntu', sans-serif;
+* {
+  font-family: "Ubuntu", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.loginContainer{
-    background-color: white;
-    color: aliceblue;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+.loginContainer {
+  background-color: white;
+  color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
 }
 
-.login, .register{
-    height: 60vh;
-    width: 50vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color:grey;
-    border-radius: 20px;
-    margin: 10% auto;
+.login,
+.register {
+  height: 60vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: grey;
+  border-radius: 20px;
+  margin: 10% auto;
 }
-.inputs div{
-    /* display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly; */
-
-    margin-top: 20px;
+.inputs div {
+  margin-top: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-a:hover{
-color: white;
+a:hover {
+  color: white;
 }
-.lgn{
-    margin-left: 10px;
+.lgn {
+  margin-left: 10px;
 }
 
 /* *******************
@@ -51,7 +47,7 @@ color: white;
 *********************/
 
 .sidenav {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: fixed;
   width: 250px;
   height: 100%;
@@ -60,28 +56,28 @@ color: white;
   z-index: 1;
   text-align: center;
 }
-.sidenav>.dash-content{
+.sidenav > .dash-content {
   text-align: left;
   padding: 10px;
 }
-.sidenav p{
+.sidenav p {
   font-weight: 700;
   padding: 20px 0;
 }
-.sidenav>.dash-content a {
+.sidenav > .dash-content a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
   color: black;
   display: block;
 }
-.sidenav img{
+.sidenav img {
   max-width: 200px;
   max-height: 200px;
   margin-top: 20px;
 }
 
-.sidenav>.dash-content a:hover {
+.sidenav > .dash-content a:hover {
   color: white;
 }
 
@@ -93,23 +89,21 @@ color: white;
   position: relative;
   overflow-x: hidden;
 }
-#online{
+#online {
   border-right: 2px solid black;
-  
 }
 
 /***** volunter section *****/
 
-#volunters{
+#volunters {
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
   padding: 20px;
 }
 
-
 /***** support section *****/
-#support{
+#support {
   /* background-color: indigo; */
   min-height: 90vh;
   margin: 10px auto;
@@ -117,13 +111,13 @@ color: white;
 }
 
 /***** book section *****/
-#book-session{
+#book-session {
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
 }
 
-#book-session h2{
+#book-session h2 {
   padding: 15px;
 }
 .calendar {
@@ -137,48 +131,48 @@ color: white;
 }
 
 /****** time *******/
-.time{
+.time {
   padding: 10px;
   text-align: center;
 }
 .time label {
   display: block;
-  font: 1rem 'Fira Sans', sans-serif;
+  font: 1rem "Fira Sans", sans-serif;
 }
 
-#appt, label {
-  margin: .4rem 0;
+#appt,
+label {
+  margin: 0.4rem 0;
 }
 
-#session{
+#session {
   padding: 10px;
 }
-.howsession{
+.howsession {
   margin-bottom: 10px;
 }
 
 /***** common section *****/
-#common-room{
+#common-room {
   min-height: 60vh;
   margin: 10px auto;
   position: relative;
 }
 
-
-#common-room>.row>.right{
+#common-room > .row > .right {
   text-align: center;
 }
 
-.left>.cmmn{
+.left > .cmmn {
   text-align: left;
   padding: 5px 30px;
 }
 
-.left>.cmmn ol{
+.left > .cmmn ol {
   list-style: lower-roman;
 }
 
-.left>.cmmn span{
+.left > .cmmn span {
   background-color: #808080;
   color: white;
   border-radius: 2px;
@@ -187,32 +181,31 @@ color: white;
 
 /***** feedback section *****/
 
-#feedback{
+#feedback {
   min-height: 75vh;
   margin: 10px auto;
   position: relative;
 }
-#feedback>.container{
+#feedback > .container {
   background-color: rgba(0, 0, 0, 0.459);
   width: 500px;
   border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
-  
 }
-#feedback>.container>.fdbck{
+#feedback > .container > .fdbck {
   width: 450px;
   min-height: 50vh;
 }
 /***start chat***/
-#chat{
+#chat {
   bottom: 50px;
   right: 100px;
   position: fixed;
   transition: ease-in-out 500ms;
 }
 
-#chat:hover{
+#chat:hover {
   bottom: 60px;
   right: 110px;
 }
@@ -255,11 +248,11 @@ color: white;
   margin-left: 50px;
 }
 
-.messageBox{
+.messageBox {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   height: 35vh;
 }
 
@@ -270,7 +263,6 @@ color: white;
   text-align: left;
   font-size: 30px;
 }
-
 
 .input-container {
   display: -ms-flexbox;
@@ -285,6 +277,10 @@ color: white;
 /***end chat***/
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }

@@ -15,23 +15,27 @@
 
 <body>
     <div class=" loginContainer">
+       
         <div class="register">
+            <button class="home btn btn-success"><a href="index.html">Home page</a></button>
             <!-- <button class="randomNum">Generate ID</button> -->
             <form action="login.html"  id="register" name="myform">
 
                     <div class="inputs">
-                <div><input class="form-control" type="text" placeholder=" User ID"  id="id" aria-label=" user ID" disabled></div>
+                <div><input class="form-control" type="text" placeholder=" User ID"  id="id" aria-label=" user ID" disabled required></div>
                     
                <div><input class="form-control" type="text" placeholder="Age" id="age"></div>
                <div><input class="form-control" type="text" placeholder="gender" id="gender">
 
-                    <div><input class="form-control" type="text" placeholder="Security Question" id="question"></div>
+                <div><input class="form-control" type="password" id="password" placeholder="Password"></div>
+                <div><input class="form-control" type="password" id="confirmPassword" placeholder="Confirm Password"></div>
+                   
                     
                    
                          
                        
           
-            <div><input class="form-control" type="password" id="password" placeholder="Password"></div>
+            
             <div><button type=" submit" class=" regbtn btn btn-success" >Register </button><span
              class="btn btn-success lgn"><a href="login.html">Login</a><span></span></div>
                 </div>
