@@ -8,16 +8,18 @@
     <title>4life</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/volunter.css">
-    <link rel="script" href="volunter.js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="volunter.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
-       
+
         <div class="life">
             <div class="user">
                 <img src="assets/usericon.png">
@@ -29,21 +31,22 @@
             </div>
 
         </div>
-        <div class="victim" >
+        <div class="victim">
             <!--victim side -->
             <div class="container" id="userdetail">
                 <h1>User Detail</h1>
                 <div id="detail">
 
-                    <p>Full Name: <span id="fname"></span></p>
-                    <p>Email: <span id="mail"></span></p>
-                    <p>Profestionist: <span id="tele"></span></p>
-                    <p>Specialisation: <span id="stree"></span></p>
+                    <p>Full Name:Joy Wanjirue <span id="fname"></span></p>
+                    <p>Email:joy@gmail.com <span id="mail"></span></p>
+                    <p>Profestionist:Doctor <span id="tele"></span></p>
+                    <p>Specialisation:Kids
+                        <!--  --> <span id="stree"></span></p>
 
                 </div>
             </div>
 
-            <div class="container" id="storo" >
+            <div class="container" id="storo">
                 <div class="victim" id="victim">
                     <h1>Victim Stories</h1>
                     <table style="width:100%">
@@ -52,7 +55,7 @@
                             <th>Gender</th>
                             <th>Age</th>
                             <th>Case</th>
-                            
+
                         </tr>
                         <tr>
                             <td>Bill</td>
@@ -66,38 +69,79 @@
                             <td>34</td>
                             <td>Rape Case</td>
                         </tr>
-                        
+
                     </table>
                 </div>
             </div>
             <hr>
+            <div class="common" id="common">
+
+                <div class="container">
+                    <h1>Common Room</h1>
+
+                    <div class="row">
+                        <div class=" meeting col-md-6">
+                            <div id="detail">
+
+                                <p>Link meeting:<span id="fname"></span></p>
+                                <p>Title:<span id="mail"></span></p>
+                                <p>Description:<span id="tele"></span></p>
+                                <p>Time:<span id="stree"></span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
             <div class="feedback" id="feedback">
                 <h1>Feedback Form</h1>
-            
-            <div class="container">
 
-                <form action>
-                    <label for="fname">ID Number</label>
-                    <input type="text" id="idnumb" name="firstname" placeholder="Your name.."><br>
+                <div class="container">
 
-                    <label for="career">Profestionist</label>
-                    <input type="text" id="career" name="career" placeholder="Your career pls.."><br>
+                    <form action>
+                        <label for="fname">ID Number</label>
+                        <input type="text" id="idnumb" name="firstname" placeholder="Your name.."><br>
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="australia">Kenya</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
-                </br>
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." 
-                        style="height:200px"></textarea>
-                       <br>
-                    <input type="submit" value="Submit">
-                </form>
+                        <label for="career">Profestionist</label>
+                        <input type="text" id="career" name="career" placeholder="Your career pls.."><br>
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Kenya</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        </br>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+                        <br>
+                        <div class="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+
+                </div>
             </div>
+            <div id="mySideChat" class="sidechat">
+                <a href="javascript:void(0)" class="closebtn" id="closeChat">&times;</a>
+                <div class="container">
+                    <div class="messageBox">
+                        <ul>
+                            <p class="bg-success">Hey</p>
+                            <p class="bg-primary float-md-left">Hello Too</p>
+                        </ul>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="form-control" placeholder="Write a Message">
+                        <i class="fad fa-paper-plane icon"></i>
+                    </div>
+                </div>
             </div>
+            <input type="button" id="chat" value="Start Chat Session" class="btn btn-success btn-lg">
         </div>
 
     </div>
