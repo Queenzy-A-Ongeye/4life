@@ -1,8 +1,10 @@
-<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .loginContainer{
@@ -43,16 +45,6 @@ color: white;
 .lgn{
     margin-left: 10px;
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
-*{
-  font-family: 'Ubuntu', sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 /* *******************
 ***dasbboard victim***
 *********************/
@@ -509,4 +501,3 @@ color: white;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
->>>>>>> beb2ea6da6fc776a6a4582b853728a22eff61825
