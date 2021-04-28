@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.loginContainer {
+  background-color: white;
+  color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.login,
+.register {
+  height: 60vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: grey;
+  border-radius: 20px;
+  margin: 10% auto;
+}
+.inputs div {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+.lgn {
+  margin-left: 10px;
+}
+
+/* *******************
+***dasbboard victim***
+*********************/
+
+.sidenav {
+  background-color: #c4c4c4;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+}
+.sidenav > .dash-content {
+  text-align: left;
+  padding: 10px;
+}
+.sidenav p {
+  font-weight: 700;
+  padding: 20px 0;
+}
+.sidenav > .dash-content a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+.sidenav img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 20px;
+}
+
+.sidenav > .dash-content a:hover {
+  color: white;
+}
+
+.main {
+  margin-left: 250px;
+  padding: 5px;
+  min-height: 500px;
+  width: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+#online {
+  border-right: 2px solid black;
+}
+
+/***** volunter section *****/
+
+#volunters {
+  min-height: 90vh;
+  margin: 10px auto;
+  position: relative;
+  padding: 20px;
+}
+
+/***** support section *****/
+#support {
+  /* background-color: indigo; */
+  min-height: 90vh;
+  margin: 10px auto;
+  position: relative;
+}
+
+/***** book section *****/
+#book-session {
+  min-height: 90vh;
+  margin: 10px auto;
+  position: relative;
+}
+
+#book-session h2 {
+  padding: 15px;
+}
+.calendar {
+  height: max-content;
+  width: max-content;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/****** time *******/
+.time {
+  padding: 10px;
+  text-align: center;
+}
+.time label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+#appt,
+label {
+  margin: 0.4rem 0;
+}
+
+#session {
+  padding: 10px;
+}
+.howsession {
+  margin-bottom: 10px;
+}
+
+/***** common section *****/
+#common-room {
+  min-height: 60vh;
+  margin: 10px auto;
+  position: relative;
+}
+
+#common-room > .row > .right {
+  text-align: center;
+}
+
+.left > .cmmn {
+  text-align: left;
+  padding: 5px 30px;
+}
+
+.left > .cmmn ol {
+  list-style: lower-roman;
+}
+
+.left > .cmmn span {
+  background-color: #808080;
+  color: white;
+  border-radius: 2px;
+  padding: 2px 6px;
+}
+
+/***** feedback section *****/
+
+#feedback {
+  min-height: 75vh;
+  margin: 10px auto;
+  position: relative;
+}
+#feedback > .container {
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+}
+#feedback > .container > .fdbck {
+  width: 450px;
+  min-height: 50vh;
+}
+/***start chat***/
+#chat {
+  bottom: 50px;
+  right: 100px;
+  position: fixed;
+  transition: ease-in-out 500ms;
+}
+
+#chat:hover {
+  bottom: 60px;
+  right: 110px;
+}
+
+.sidechat {
+  height: 60vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: grey;
+  border-radius: 5px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  overflow-y: hidden;
+}
+
+.sidechat a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidechat a:hover {
+  color: #f1f1f1;
+}
+
+.sidechat .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.messageBox {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  height: 35vh;
+}
+
+.icon {
+  padding: 10px;
+  color: #000000;
+  min-width: 50px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-field:focus {
+  border: 2px solid #000000;
+}
+/***end chat***/
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

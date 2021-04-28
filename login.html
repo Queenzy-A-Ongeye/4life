@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=" loginContainer">
+        
+        <div class="login loginVictim">
+            <button class="home btn btn-success"><a href="index.html">Home page</a></button>
+            <button class="volunteerdash btn btn-light">volunteer</button>
+            <form action="" id="login">
+
+              <h3>Victim Dashboard</h3>
+                    <div class="inputs">
+                <div><input class="form-control" type="text" placeholder=" User ID" id="inputtedId"></div>
+                    
+               <div><input class="form-control" type="password" placeholder="Password" id="inputtedPassword"
+                    aria-label="Disabled input example"> </div>
+                    <div><input class="form-control" type="text" placeholder="Security Question" id="question"></div>
+                    <div><button type=" submit" class=" lgnbtn btn btn-success login1">Login </button>
+                <span class="btn btn-success "><a href="register.html">Register</a></span></div>
+                    </div>
+            </form>
+        </div>
+
+        <div class="login loginVolunteer">
+            <!-- <div class="choose col-md-3">
+                <label for="choose"><strong> Victim/Volunteer:</strong></label>
+                <select id="choose" class="form-select">
+                  <option value="victim">Victim</option>
+                  <option value="volunteer" id="volunteer">Volunteer</option>
+                </select>
+              </div> -->
+              <button class="home btn btn-success"><a href="index.html">Home page</a></button>
+              <button class="victimdash btn btn-light">Victim</button>
+            <form action=""  id="loginVolunteer" >
+              
+                    <div class="inputs">
+                <div><input class="form-control" type="text" placeholder=" User ID" id="volunteerId"></div>
+
+                    
+               <div><input class="form-control" type="password" placeholder="Password" id="volunteerPassword"
+                    aria-label="Disabled input example"> </div>
+                 <div><input class="form-control" type="text" placeholder="Security Question" id="volunteerQuestion"></div>
+                    <div><button type=" submit" class=" volunteerbtn btn btn-success login1">Login </button>
+                <!-- <span class="btn btn-success "><a href="register.html">Register</a></span></div> -->
+                    </div>
+            </form>
+        </div> 
+    </div>
+    
+    <script src="login.js" ></script>
+</body>
+
+</html>
