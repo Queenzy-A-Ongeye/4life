@@ -6,7 +6,7 @@ $(document).ready(function(){
     lgnbtn.addEventListener('submit', login)
     
     function login(e){
-        //  e.preventDefault()
+         e.preventDefault()
 
         const inputtedId = document.querySelector('#inputtedId')
         const inputtedPassword = document.querySelector('#inputtedPassword')
@@ -27,8 +27,8 @@ $(document).ready(function(){
             
          else if(newInput===retrieved.id&& newPass===retrieved.password){
             
-            //  alert('login success')
-             window.location.href = './dash-victim.html'
+             alert('login success')
+             window.location.href = 'dash-victim.html'
 
              
 
@@ -61,7 +61,7 @@ $('.victimdash').click(function(){
 // function volunteerlogin(){
 $('#loginVolunteer').submit(function(e){
 
-    // e.preventDefault();
+    e.preventDefault();
 
         const volunteerId = document.querySelector('#volunteerId').value
     const volunteerPassword = document.querySelector('#volunteerPassword').value
@@ -78,9 +78,7 @@ $('#loginVolunteer').submit(function(e){
     }
 
     else if(givenId===volunteerId&&givenPassword===volunteerPassword){
-     
-        // alert('volunteer login successful')
-        window.location.href = './4life/volunter.html'
+            window.location.href = './4life/volunter.html'
 
     }
 
