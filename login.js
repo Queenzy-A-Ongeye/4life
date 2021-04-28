@@ -26,8 +26,12 @@ $(document).ready(function(){
             }
             
          else if(newInput===retrieved.id&& newPass===retrieved.password){
-            alert('login successful')
             
+            //  alert('login success')
+             window.location.href = './dash-victim.html'
+
+             
+
          }
         
         }
@@ -75,6 +79,9 @@ $('#loginVolunteer').submit(function(e){
 
     else if(givenId===volunteerId&&givenPassword===volunteerPassword){
      
+        // alert('volunteer login successful')
+        window.location.href = './4life/volunter.html'
+
     }
 
 
