@@ -100,6 +100,10 @@ font-size: 20px;
 p{
   font-family: 'Gabriela', serif;
 }
+.sub a{
+  color: white;
+  text-decoration: none;
+}
 
 /* donate */
 .don{
