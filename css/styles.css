@@ -121,6 +121,9 @@ color: white;
   position: relative;
   overflow-x: hidden;
 }
+.main h2{
+  padding: 20px;
+}
 #online {
   border-right: 2px solid black;
 }
@@ -136,12 +139,47 @@ color: white;
 
 /***** support section *****/
 #support{
-  background-color: indigo;
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
 }
+#support>.row{
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+#support>.row>.s-support{
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+#support>.row>.s-support a{
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px 10px 0 10px;
+}
+#support>.row>.s-support a:hover{
+  color: #ffffff;
+  font-size: 20px;
+  background-color: grey;
+  font-weight: 500;
+  padding: 8px 10px 0 10px;
+  border-radius: 4px;
 
+
+}
+#support>.row>.s-support p{
+  color: #000000;
+  font-size: 20px;
+  padding: 6px 10px 0 10px;
+  text-align: center;
+}
+#support>.row>.s-support img{
+  width: auto;
+  height: 400px;
+  text-align: center;
+}
 /***** book section *****/
 #book-session{
   min-height: 90vh;
@@ -161,7 +199,16 @@ color: white;
   position: relative;
   overflow: hidden;
 }
-
+#bookDisplay{
+  background-color: rgba(0, 0, 0, 0.514);
+  color: #f1f1f1;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+#lstBkDsply{
+  list-style: armenian;
+}
 /****** time *******/
 .time {
   padding: 10px;
@@ -279,7 +326,7 @@ color: white;
 .messageBox{
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #ced5db;
   border-radius: .3rem;
   height: 35vh;
 }
@@ -303,6 +350,89 @@ color: white;
 }
 /***end chat***/
 
+/****Report Section****/
+.rept{
+  background-color: #00000083;
+  background-image: url('../assets/gbv-image_website-01.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+.navcustom{
+  background-color: rgb(158, 158, 158);
+  height: 100px;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+.navcustom ul{
+  width: 100%;
+
+}
+.navcustom ul li{
+  margin: 0 80px;
+}
+.navcustom ul li>.title{
+  font-size: 45px;
+}
+.navcustom ul li>.other{
+  margin-top: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  border: 2px solid;
+}
+.navcustom ul li>.other:hover{
+  background-color: black;
+  border: 2px solid black;
+}
+.report{
+  padding: 20px;
+  color: white;
+  margin-bottom: 50px;
+}
+.rpt h3{
+  padding: 30px;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 35px;
+}
+.typesgbv{
+  padding: 20px;
+  color: #ffffff;
+}
+#caseNumber{
+  font-size: 25px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+.typesgbv>.container ol{
+  padding: 20px;
+  font-size: 20px;
+}
+.typesgbv>.container em{
+  font-size: 19px;
+  font-weight: 700;
+  font-size: 23px;
+}
+.report>.container{
+  background-color: rgba(255, 255, 255, 0.562);
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 5px;
+  color: #000;
+}
+.report>.container label{
+  font-size: 25px;
+}
+.report>.container input[type=text],
+input[type=time],
+input[type=file], #gbvtype{
+  height: 40px;
+  color: #000000;
+}
+/* end report */
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;

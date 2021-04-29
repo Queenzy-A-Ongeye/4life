@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/dash-victim.js"></script>
+  <title>Report</title>
+</head>
+
+<body class="rept">
+  <div class="container rpt">
+    <nav class="navbar  navcustom">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <input type="button" value="Go Home" class="btn  btn-lg other" id="home">
+        </li>
+        <li class="nav-item">
+          <a href="#" class="=nav-link title">Report Case</a>
+        </li>
+        <li class="nav-item">
+          <input type="button" value="Login" class="btn  btn-lg other" id="login">
+        </li>
+      </ul>
+    </nav>
+    <div class="typesgbv">
+      <div class="container">
+        <h3 class="text-center">Types of Assualts</h3>
+        <ol>
+          <li><em>Violence aganist Women and Girl</em> ==> GBV is disproportionately directed against women and girls
+            [4]. For this reason, you may find that some definitions use GBV and VAWG interchangeably, and in this
+            article, we focus mainly on VAWG.</li>
+          <li><em>Violence aganist LGBTI people</em> ==> Violence against LGBTI people However, it is possible for
+            people of all genders to be subject to GBV. For example, GBV is often experienced by people who are seen as
+            not conforming to their assigned gender roles, such as lesbian, bisexual, transgender and/or intersex
+            people.</li>
+          <li><em>Intimate PArtner Violence</em> ==> IPV is the most common form of GBV and includes physical, sexual,
+            and emotional abuse and controlling behaviours by a current or former intimate partner or spouse, and can
+            occur in heterosexual or same-sex couples [5].</li>
+          <li><em>Domestic Violence</em>==> Domestic violence refers to violence which is carried out by partners or
+            family members. As such, DV can include IPV, but also encompasses violence against children or other family
+            members.</li>
+          <li><em>Sexual Violence</em> ==> Sexual violence is “any sexual act, attempt to obtain a sexual act, unwanted
+            sexual comments or advances, or acts to traffic, or otherwise directed, against a person’s sexuality using
+            coercion, by any person regardless of their relationship to the victim, in any setting, including but not
+            limited to home and work.”</li>
+          <li><em>Indirect (structual violence)</em> ==> Structural violence exists when certain groups, classes,
+            genders or nationalities have privileged access to goods, resources and opportunities over others, and when
+            this unequal advantage is built into the social, political and economic systems that govern their lives.”
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="report">
+      <h3 class="text-center">Do Fill the Form</h3>
+      <div class="container">
+        <form id="formreport">
+          <label for="casenumber" class="form-label">Case Number </label>
+          <span id="caseNumber"></span>
+          <br>
+          <label for="name" class="form-label">Name of Victim</label>
+          <input type="text" name="nameVictim" id="nameVictim" class="form-control mb-2">
+  
+          <label for="number" class="form-label">Phone Number</label>
+          <input type="text" name="numberVictim" id="numberVictim" class="form-control mb-2">
+  
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="emailVictim" id="emailVictim" class="form-control mb-2">
+  
+          <label for="time-date" class="form-label">Enter Time and Date of the Assualt</label>
+          <input type="time" name="tdate" id="tdate" class="form-control mb-2">
+  
+          <label for="" class="form-label">Type Of Assualt</label>
+          <select name="gbv" id="gbvtype" class="form-control mb-2">
+            <option value="">----</option>
+            <option value="vawg">Violence aganist Women and Girl</option>
+            <option value="lgbti">Violence aganist LGBTI people</option>
+            <option value="ipv">Intimate PArtner Violence</option>
+            <option value="dv">Domestic Violence</option>
+            <option value="sv">Sexual Violence</option>
+            <option value="isv">Indirect (structual violence)</option>
+          </select>
+          
+          <label for="img" class="form-label">Select image</label>
+          <input type="file" id="img" name="img" accept="image/*" class="form-control mb-2">
+  
+          <div class="type">
+            <label for="assualtdesc" class="form-label">Assualt description</label>
+            <textarea name="assualtdesc" id="assualtdesc" cols="30" rows="10" class="form-control mb-2"></textarea>
+          </div> 
+
+          <input type="submit" value="Submit" class="btn btn-success btn-lg mt-3">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
