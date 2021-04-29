@@ -23,11 +23,11 @@
         <div class="life">
             <div class="user">
                 <img src="assets/usericon.png">
-                <a href="#user">User Details</a>
+                <a href="#userdetail">User Details</a>
                 <a href="#victim">Victims</a>
                 <a href="#common">Common Room</a>
                 <a href="#feedback">Feedback</a>
-
+                <a href="../index.html"><i class="fad fa-sign-out"></i> Log Out</a>
             </div>
 
         </div>
@@ -37,11 +37,10 @@
                 <h1>User Detail</h1>
                 <div id="detail">
 
-                    <p>Full Name:Joy Wanjirue <span id="fname"></span></p>
-                    <p>Email:joy@gmail.com <span id="mail"></span></p>
-                    <p>Profestionist:Doctor <span id="tele"></span></p>
-                    <p>Specialisation:Kids
-                        <!--  --> <span id="stree"></span></p>
+                    <p>Full Name: <span id="firstname"></span></p>
+                    <p>Email: <span id="mail"></span></p>
+                    <p>Profestionist: <span id="prof"></span></p>
+                    <p>Specialisation: <span id="spec"></span></p>
 
                 </div>
             </div>
@@ -81,19 +80,24 @@
 
                     <div class="row">
                         <div class=" meeting col-md-6">
-                            <div id="detail">
+                            <div id="meetdetail">
 
-                                <p>Link meeting:<span id="fname"></span></p>
-                                <input type="text">
+                                <p>Link meeting:  <span id="meetinId"></span></p>
                                 <p>Title:</p>
-                                <input type="text">
+                                <input type="text" id="title" class="form-control">
                                 <p>Description:</p>
-                                <input type="text">
+                                <input type="text" id="description" class="form-control">
                                 <p>Time:</p>
-                                <input type="text">
+                                <input type="time" id="timede" class="form-control">
+
+                                <input type="button" value="Create Meeting" class="btn btn-secondary" id="crtmeet">
                             </div>
                         </div>
-                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <ol id="lstmeet">
+
+                            </ol>
+                        </div>
                     
                     </div>
                 </div>
@@ -105,8 +109,8 @@
 
                 <div class="container">
 
-                    <form action>
-                        <label for="fname">ID Number</label>
+                    <form id="feedbackform">
+                        <label for="fname">Name</label>
                         <input type="text" id="idnumb" name="firstname" placeholder="Your name.."><br>
 
                         <label for="career">Profestionist</label>

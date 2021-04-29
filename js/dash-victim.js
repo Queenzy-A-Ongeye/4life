@@ -94,6 +94,23 @@ $(document).ready(function(){
     }
   })
 
+  $('#feedbackform').submit(function(event){
+    event.preventDefault()
+    let nameVictim = $('#nameVictim').val();
+    let numberVictim = $('#numberVictim').val();
+    let emailVictim = $('#emailVictim').val();
+    let tdate = $('#tdate').val();
+    let gbvtype = $('#gbvtype').val();
+    let assualtdesc = $('#assualtdesc').val();
+
+    if(nameVictim && numberVictim && emailVictim && tdate && gbvtype && assualtdesc){
+      alert('Submitted');
+      location.reload();
+    }else{
+      alert('Fill the blank Part')
+    }
+  })
+
   $('#login').click(function(){
     window.location.href = 'login.html'
   })
@@ -115,5 +132,19 @@ $(window).on('load', function(){
   }
 
   $('#caseNumber').text(randomNumber(6))
+
+  for (let i = 1; i<localStorage.length; i++){
+    let tosplit = localStorage.key(i).split('-');
+
+    if (tosplit[0] == 'meeting'){
+      let one = localStorage.key(i)
+      let meet = getobjects(one)
+
+      $("#meetId").text(meet.link);
+      $("ol#meetingList").append("<li class ='moreDetails'>" + meet.title +" <span>Join</span></li>");
+
+
+    }
+  }
 })
 
