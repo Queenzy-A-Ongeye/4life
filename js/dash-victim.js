@@ -1,5 +1,6 @@
 // retrive data
-function Booking(date, time, view){
+function Booking(tosee, date, time, view){
+  this.whotosee = tosee;
   this.date = date;
   this.time = time;
   this.view = view;
@@ -53,25 +54,28 @@ $(document).ready(function(){
 
   // book session
   $('#confr').on('click', function(){
+    let wtosee = $("#tosee").val()
     let bookcal = $("#bkmet").val();
     let bTime = $("#appt").val();
     let hSession = $("input:radio[name=tlk]:checked").val()
 
     if (bookcal && bTime && hSession){
-      let newbooking = new Booking(bookcal, bTime, hSession);
+      let newbooking = new Booking(wtosee, bookcal, bTime, hSession);
       saveObjects('b-book'+def, newbooking);
     }
+  });
 
+  $('#seeSession').on('click', function(){
     for (let i = 1; i<localStorage.length; i++){
       let tosplit = localStorage.key(i).split('-');
 
       if (tosplit[0] == 'b'){
         let one = localStorage.key(i)
         let bookinfo = getobjects(one)
-        $("ul#lstBkDply").append("<li class ='moreDetails'>" + bookinfo.date +" -- "+bookinfo.time+' -- '+ bookinfo.view + "</li>");
+        $("ul#lstBkDply").append("<li class ='moreDetails'> Date: " + bookinfo.date +"<br>Time: "+bookinfo.time+'  Mode of Talk: '+ bookinfo.view + '<br>To see: ' + bookinfo.whotosee + "</li>");
       }
     }
-  });
+  })
 
   $('#formreport').submit(function(event){
     event.preventDefault()
@@ -102,12 +106,11 @@ $(window).on('load', function(){
   for (let i = 1; i<localStorage.length; i++){
     let tosplit = localStorage.key(i).split('-');
 
-    if (tosplit[0] == 'victim'){
+    if (tosplit[0] == 'volunter'){
       let one = localStorage.key(i)
       let info = getobjects(one)
       
       $("ol#online").append("<li class ='moreDetails'>" + info.id + "</li>");
-
     }
   }
 

@@ -139,7 +139,6 @@ color: white;
 
 /***** support section *****/
 #support{
-  background-color: indigo;
   min-height: 90vh;
   margin: 10px auto;
   position: relative;
@@ -200,7 +199,16 @@ color: white;
   position: relative;
   overflow: hidden;
 }
-
+#bookDisplay{
+  background-color: rgba(0, 0, 0, 0.514);
+  color: #f1f1f1;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+#lstBkDsply{
+  list-style: armenian;
+}
 /****** time *******/
 .time {
   padding: 10px;
@@ -318,7 +326,7 @@ color: white;
 .messageBox{
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #ced5db;
   border-radius: .3rem;
   height: 35vh;
 }
@@ -424,7 +432,7 @@ input[type=file], #gbvtype{
   height: 40px;
   color: #000000;
 }
-
+/* end report */
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;

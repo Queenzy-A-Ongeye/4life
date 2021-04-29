@@ -40,7 +40,11 @@
             <h3 class="text-md-center">Online </h3>
             <div class="onVol">
               <ol id="online">
-
+                <li>Isabella Joy</li>
+                <li>Sopia Ava</li>
+                <li>Amelia Harper</li>
+                <li>Noah Jack</li>
+                <li>Jacob Wekesa</li>
               </ol>
             </div>
           </div>
@@ -49,11 +53,10 @@
             <div class="onVol">
               <ol id="offline">
                 <li>Samuel Maingi</li>
-                <li>Mutunga Maingi</li>
-                <li>Samuel Maingi</li>
-                <li>Mutunga Maingi</li>
-                <li>Samuel Maingi</li>
-                <li>Mutunga Maingi</li>
+                <li>Mutunga Layla</li>
+                <li>John Doe</li>
+                <li>Emma Joy</li>
+                <li>Mia Ava</li>
               </ol>
             </div>
           </div>
@@ -159,26 +162,37 @@
       <div class="container-fluid light" id="book-session">
         <h2 class="text-center">Book Session</h2>
         <div class="container d-md-flex flex-column justify-content-center align-items-center">
+          <div class="whomtosee">
+            <label for="wtosee" class="form-label">Who to See</label><br>
+            <select name="tosee" id="tosee" class="mb-2">
+              <option value="">----</option>
+              <option value="Counsler">Counsler</option>
+              <option value="Pyschologist">Pyschologist</option>
+              <option value="Doctor">Doctor</option>
+              <option value="Pediarician">Pediarician</option>
+            </select>
+          </div>
 
           <div class="form-group">
-            <label for="bkmet">Choose Convient day</label>
-            <input id="bkmet" class="form-control" type="date">
+            <label for="bkmet"  class="form-label">Choose Convient day</label>
+            <input id="bkmet" class="form-control mb-2" type="date">
           </div>
 
           <div class="time">
-            <label for="appt">Set time for your meeting:</label>
-            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required><br>
+            <label for="appt" class="form-label">Set time for your meeting:</label>
+            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required class="form-control mb-2"><br>
             <small>Open hours are 8am to 6pm</small>
           </div>
           <div class="howsession">
-            <label class="radio-inline" id="session">
+            <label class="radio-inline form-label" id="session">
               <input type="radio" name="tlk" value="chat"> Chat
             </label>
-            <label class="radio-inline" id="session">
+            <label class="radio-inline form-label" id="session">
               <input type="radio" name="tlk" value="Voice"> Voice
             </label>
             <br>
-            <input type="button" class="btn btn-secondary btn-lg" value="Book Session" id="confr" aria-pressed="true">
+            <input type="button" class="btn btn-secondary btn-lg" value="Book Session" id="confr" aria-pressed="true"><br><br>
+            <input type="button" class="btn btn-secondary btn-lg" value="See Sessions" id="seeSession" aria-pressed="true">
           </div>
 
           <div id="bookDisplay">
@@ -256,8 +270,8 @@
         <div class="container">
           <div class="messageBox">
             <ul>
-              <p class="bg-success">Hey</p>
-              <p class="bg-primary float-md-left">Hello Too</p>
+              <p class="bg-secpndary p-2">Hey</p>
+              <p class="bg-primary p-2">Hello Too</p>
             </ul>
           </div>
           <div class="input-container">
