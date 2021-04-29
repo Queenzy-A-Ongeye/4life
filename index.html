@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>4life</title>
 </head>
+
 <body>
     <!-- nav-bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mr-4 ml-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <a class="navbar-brand" href="#">4life</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,12 +32,12 @@
                     <a class="nav-link" href="#hotline">Hotline/Report</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#donate">Donation</a>
+                    <a class="nav-link disabled" href="#donate">Donation</a>
                 </li>
             </ul>
         </div>
-        <button type="submit" class="btn btn col-md-1 bg-secondary" id="sub">
-            <a href="login.html">login</a>
+        <button type="submit" class="btn btn col-md-1 bg-success" id="sub">
+            <a href="">login</a>
         </button>
     </nav>
 
@@ -78,165 +74,66 @@
     </div>
 
     <!-- hotline -->
-    <div id="hotline">
-        <div class="container what-we-do">
-            <h2 class="dab">What we do..</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div id="report">
-                        <h2 class="title">REPORT</h2>
-                        <p>We have first class experience in dealing with various cases and how to report to each
-                            according
-                            to the ststus.</p>
-                        <p>Throughout, our project has managed to access countless numbers both in the towns and the
-                            ghettos
-                            our heading
-                            has always reached out deep
-                        </p>
-                        <button type="submit" class="btn btn col-md-1 bg-secondary sub">
-                            <a href="report.html">Report</a>
-                        </button>
-                    </div>
-                    <div id="repo-img">
-                        <img src="./assets/download (1).jpeg" alt="">
-                        <div id="title">
-                            <p id="title">REPORT</p>
-                        </div>
+    <div class="container what-we-do">
+        <h2 class="dab">What we do..</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="report">
+                    <h2 class="title">REPORT</h2>
+                    <p>We have first class experience in dealing with various cases and how to report to each according
+                        to the ststus.</p>
+                    <p>Throughout, our project has managed to access countless numbers both in the towns and the ghettos
+                        our heading
+                        has always reached out deep
+                    </p>
+                    <button type="submit" class="btn btn col-md-1 bg-success sub">
+                        <a href="">Report</a>
+                    </button>
+                </div>
+                <div id="repo-img">
+                    <img src="./assets/download (1).jpeg" alt="">
+                    <div id="title">
+                        <p>REPORT</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div id="dev">
-                        <h2 class="title">EMERGENCY</h2>
-                        <p>Our extensive research on GBV in emergencies also builds evidence for the greater
-                            humanitarian
-                            community. We invest in strengthening protection systems that address gender-based violence
-                            including through health and social services and that help keep all women, girls and boys
-                            from
-                            harm’s way.
-                        </p>
-                        <p>Our <span class="gif">hotline</span> number is: 276093</p>
-                    </div>
-                    <div id="dev-img">
-                        <img src="./assets/hot.jpeg" alt="">
-                        <div id="title">
-                            <p id="title">EMERGENCY</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div id="dev">
+                    <h2 class="title">EMERGENCY</h2>
+                    <p>Our extensive research on GBV in emergencies also builds evidence for the greater humanitarian
+                        community. We invest in strengthening protection systems that address gender-based violence 
+                        including through health and social services and that help keep all women, girls and boys from
+                        harm’s way.
+                    </p>
+                    <p>Our <span class="gif">hotline</span> number is: 276093</p>
+                </div>
+                <div id="dev-img">
+                    <img src="./assets/hot.jpeg" alt="">
+                    <div id="title">
+                        <p>EMERGENCY</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div id="educate">
-                        <h2 class="title">EDUCATE</h2>
-                        <p>Through our seminars, workshops and events we tend to educate people about the importance of
-                            speaking out,
-                            reaching out and not turning a blind eye to what happens around their society.</p>
-                        <p>We also get to interact with students in all aspects (Primary, Seconday, Tertiary and
-                            university)
-                            amd have a one-on-one
-                            session with our counsilors and personnel.
-                        </p>
-                    </div>
-                    <div id="edu-img">
-                        <img src="./assets/EDU.jpeg" alt="">
-                        <div id="title">
-                            <p id="title">EDUCATE</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div id="educate">
+                    <h2 class="title">EDUCATE</h2>
+                    <p>Through our seminars, workshops and events we tend to educate people about the importance of speaking out,
+                         reaching out and not turning a blind eye to what happens around their society.</p>
+                    <p>We also get to interact with students in all aspects (Primary, Seconday, Tertiary and university)
+                        amd have a one-on-one
+                        session with our counsilors and personnel.
+                    </p>
+                </div>
+                <div id="edu-img">
+                    <img src="./assets/EDU.jpeg" alt="">
+                    <div id="title">
+                        <p>EDUCATe</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Donation -->
-    <div id="donate">
-        <div class="don">
-            <h2 class="pond">"Giving to others selflesly and anonymously, radiating light throughout the
-                world and illuminating your own darkness, your virtue becomes a sanctuary for yourself and all
-                beings."</h2>
-        </div>
-        <h2 class="dab">Some of our donors..</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="img-hover-zoom--blur">
-                    <img src="./assets/donation/LVCT_Logo.png" height="350" width="400" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="img-hover-zoom--blur">
-                    <img src="./assets/donation/UN-women-logo.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="img-hover-zoom--blur">
-                    <img src="./assets/donation/fida.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="img-hover-zoom--blur">
-                    <img src="./assets/donation/hack.png" height="200" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="img-hover-zoom--blur">
-                    <img src="./assets/donation/bill.png" width="300" height="200" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="img-hover-zoom--blur">
-                    <img src="./assets/donation/betty.jpeg" alt="" width="200">
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container" id="Contact">
-            <div class="row">
-                <div class="col-md-3 col-sm-12" id="copyright">
-                    <p> Copyright ©
-                        2020
-                        <br>4life</p>
-
-                </div>
-                <div class="col-md-2 col-sm-12">
-                    <div class="location">
-                        <h4>Location</h4>
-                        <ul>
-                            <li>Fedha Plaza Mpaka Road Westlands</li>
-                            <li>4th floor <br></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="contact-info">
-                        <h4>For any queries or feedback</h4>
-                        <ul>
-                            <li><em>Phone</em>: 0734-095-275</li>
-                            <li><em>Email</em>: @gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="connect-us">
-                        <h4>Connect with us on</h4>
-                        <ul>
-                            <li><a class="btn btn-outline-light btn-social mx-1" href="#"><i
-                                        class="fab fa-fw fa-facebook"></i></a></li>
-                            <li><a class="btn btn-outline-light btn-social mx-1" href="#"><i
-                                        class="fab fa-fw fa-twitter"></i></a></li>
-                            <li><a class="btn btn-outline-light btn-social mx-1" href="#"><i
-                                        class="fab fa-fw fa-linkedin-in"></i></a></li>
-                            <li><a class="btn btn-outline btn-social mx-1" href="#"><i
-                                        class="fab fa-fw fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/landing.js"></script>
 </body>
+
 </html>
