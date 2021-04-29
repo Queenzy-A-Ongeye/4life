@@ -48,13 +48,18 @@ var newUser = new User(id.value, age1.value, gender.value, password.value);
 }
 
     else if(password.value!=confirmPassword.value){
-        alert('password do not match')
+        alert('password do not match');
         return false;
     }
+    else if(password.value.length<5){
+        alert('password too short')
+        return false
+    }
+    else 
   localStorage.setItem('user', JSON.stringify(newUser))
-
+window.location.href='login.html'
   
-//   e.preventDefault();
+  e.preventDefault();
 }
 
 // let saveObjects = function(userkey,newUser){

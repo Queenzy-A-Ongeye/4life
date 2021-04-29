@@ -16,7 +16,7 @@
 
 .login,
 .register {
-  height: 60vh;
+  height: 70vh;
   width: 50vw;
   display: flex;
   align-items: center;
