@@ -29,6 +29,17 @@ window.onload = function(){
   }
 }
 
+
+function randomNumber(length) {
+  var randomNumber;
+  var number = '';
+  for (var count = 0; count < length; count++) {
+    randomNumber = Math.floor(Math.random() * 10);
+    number += randomNumber.toString();
+  }
+  return number;
+}
+
 // user logic
 
 
@@ -61,6 +72,30 @@ $(document).ready(function(){
       }
     }
   });
+
+  $('#formreport').submit(function(event){
+    event.preventDefault()
+    let nameVictim = $('#nameVictim').val();
+    let numberVictim = $('#numberVictim').val();
+    let emailVictim = $('#emailVictim').val();
+    let tdate = $('#tdate').val();
+    let gbvtype = $('#gbvtype').val();
+    let assualtdesc = $('#assualtdesc').val();
+
+    if(nameVictim && numberVictim && emailVictim && tdate && gbvtype && assualtdesc){
+      alert('Submitted');
+      location.reload();
+    }else{
+      alert('Fill the blank Part')
+    }
+  })
+
+  $('#login').click(function(){
+    window.location.href = 'login.html'
+  })
+  $('#home').click(function(){
+    window.location.href = 'index.html'
+  })
 });
 
 $(window).on('load', function(){
@@ -75,4 +110,7 @@ $(window).on('load', function(){
 
     }
   }
+
+  $('#caseNumber').text(randomNumber(6))
 })
+

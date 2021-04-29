@@ -7,21 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/dash-victim.js"></script>
   <title>Report</title>
 </head>
 
 <body class="rept">
   <div class="container rpt">
-    <nav class="navbar bg-primary">
+    <nav class="navbar  navcustom">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a href="#" class="navbar-text align-md-center nav-link">Go back</a>
+          <input type="button" value="Go Home" class="btn  btn-lg other" id="home">
         </li>
         <li class="nav-item">
-          <a href="#" class="navbar-brand align-md-center nav-link">Report Case</a>
+          <a href="#" class="=nav-link title">Report Case</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="navbar-text align-md-center nav-link">Login</a>
+          <input type="button" value="Login" class="btn  btn-lg other" id="login">
         </li>
       </ul>
     </nav>
@@ -57,10 +59,9 @@
     <div class="report">
       <h3 class="text-center">Do Fill the Form</h3>
       <div class="container">
-        <form>
-          <label for="casenumber" class="form-label">Case Number</label>
-          <br>
-          <span id="caseNumber">12345</span>
+        <form id="formreport">
+          <label for="casenumber" class="form-label">Case Number </label>
+          <span id="caseNumber"></span>
           <br>
           <label for="name" class="form-label">Name of Victim</label>
           <input type="text" name="nameVictim" id="nameVictim" class="form-control mb-2">
@@ -85,7 +86,7 @@
             <option value="isv">Indirect (structual violence)</option>
           </select>
           
-          <label for="img" class="form-label">Select image:</label>
+          <label for="img" class="form-label">Select image</label>
           <input type="file" id="img" name="img" accept="image/*" class="form-control mb-2">
   
           <div class="type">

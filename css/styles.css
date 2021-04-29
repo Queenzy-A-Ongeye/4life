@@ -325,6 +325,33 @@ label {
   background-blend-mode: darken;
   background-attachment: fixed;
 }
+.navcustom{
+  background-color: rgb(158, 158, 158);
+  height: 100px;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+.navcustom ul{
+  width: 100%;
+
+}
+.navcustom ul li{
+  margin: 0 80px;
+}
+.navcustom ul li>.title{
+  font-size: 45px;
+}
+.navcustom ul li>.other{
+  margin-top: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  border: 2px solid;
+}
+.navcustom ul li>.other:hover{
+  background-color: black;
+  border: 2px solid black;
+}
 .report{
   padding: 20px;
   color: white;
@@ -340,7 +367,11 @@ label {
   padding: 20px;
   color: #ffffff;
 }
-
+#caseNumber{
+  font-size: 25px;
+  color: #ffffff;
+  padding-left: 10px;
+}
 .typesgbv>.container ol{
   padding: 20px;
   font-size: 20px;
