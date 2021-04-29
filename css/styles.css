@@ -89,6 +89,9 @@ a:hover {
   position: relative;
   overflow-x: hidden;
 }
+.main h2{
+  padding: 20px;
+}
 #online {
   border-right: 2px solid black;
 }
@@ -109,7 +112,43 @@ a:hover {
   margin: 10px auto;
   position: relative;
 }
+#support>.row{
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+#support>.row>.s-support{
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+#support>.row>.s-support a{
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px 10px 0 10px;
+}
+#support>.row>.s-support a:hover{
+  color: #ffffff;
+  font-size: 20px;
+  background-color: grey;
+  font-weight: 500;
+  padding: 8px 10px 0 10px;
+  border-radius: 4px;
 
+
+}
+#support>.row>.s-support p{
+  color: #000000;
+  font-size: 20px;
+  padding: 6px 10px 0 10px;
+  text-align: center;
+}
+#support>.row>.s-support img{
+  width: auto;
+  height: 400px;
+  text-align: center;
+}
 /***** book section *****/
 #book-session {
   min-height: 90vh;
@@ -275,6 +314,58 @@ label {
   border: 2px solid #000000;
 }
 /***end chat***/
+
+/****Report Section****/
+.rept{
+  background-color: #00000083;
+  background-image: url('../assets/gbv-image_website-01.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+.report{
+  padding: 20px;
+  color: white;
+  margin-bottom: 50px;
+}
+.rpt h3{
+  padding: 30px;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 35px;
+}
+.typesgbv{
+  padding: 20px;
+  color: #ffffff;
+}
+
+.typesgbv>.container ol{
+  padding: 20px;
+  font-size: 20px;
+}
+.typesgbv>.container em{
+  font-size: 19px;
+  font-weight: 700;
+  font-size: 23px;
+}
+.report>.container{
+  background-color: rgba(255, 255, 255, 0.562);
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 5px;
+  color: #000;
+}
+.report>.container label{
+  font-size: 25px;
+}
+.report>.container input[type=text],
+input[type=time],
+input[type=file], #gbvtype{
+  height: 40px;
+  color: #000000;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {
