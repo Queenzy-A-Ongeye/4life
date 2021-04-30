@@ -1,4 +1,25 @@
+let getobjects = function (userkey) {
+    return JSON.parse(localStorage.getItem(userkey))
+}
 
+let saveObjects = function (userkey, uservalue) {
+    let str = JSON.stringify(uservalue);
+    return localStorage.setItem(userkey, str)
+}
+
+let videf = 0
+window.onload = function () {
+    if (localStorage.length === 0) {
+        saveObjects('regdefault', videf);
+        location.reload();
+    } else {
+        videf = localStorage.length
+        $("#confr").on('click', function () {
+            videf += 1
+            saveObjects('regdefault', videf)
+        })
+    }
+}
 window.onload = (event) => {
     
   
@@ -38,6 +59,9 @@ function randomNumber(length) {
 }
 
 id.value = randomNumber(5);
+
+var newUser = new User(id.value, age1.value, gender.value, password.value);
+saveObjects('victim-'+videf, newUser)
 
 function register(e){
 var newUser = new User(id.value, age1.value, gender.value, password.value);
